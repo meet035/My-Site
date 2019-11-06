@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Meet Bhalodia</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="favicon.ico">
-  </head>
-  <body>
 
-  <div class="top-div">
-    <img class="top-cloud" src="Images/cloud.png" alt="cloud-img">
+<head>
+  <meta charset="utf-8">
+  <title>Meet Bhalodia</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header id="parallax">
     <h1>I'm Meet.</h1>
     <h2>a <span class="pro">pro</span>grammer.</h2>
-    <img class="bottom-cloud" src="Images/cloud.png" alt="cloud-img">
     <img src="Images/mountain.png" alt="mountain-img">
-  </div>
-
+  </header>
   <div class="middle-div">
-    <div class="profile">
+    <div>
       <img src="Images/CopyPic.png" alt="">
       <h2>Hello.</h2>
       <p class="intro">Organized, Focused and Dedicated Java Aspirant. Aspiring to work in an environment of growth and excellence to grow as a person and professional.</p>
     </div>
+
     <hr>
 
-    <div class="skills">
+    <div>
       <h2>My Skills.</h2>
 
       <div class="skill-row">
@@ -37,7 +36,8 @@
       <div class="skill-row">
         <img class="computer-img" src="Images/computer.png" alt="">
         <h3>Expertise</h3>
-        <p>Hands-on experience in Analysis, Development and Implementation. Solid programming expertise in JAVA, C/C++, Object Oriented analysis/methodologies. Fast learner with creative problem solving skills, good coding and communication skills.</p>
+        <p>Hands-on experience in Analysis, Development and Implementation. Solid programming expertise in JAVA, C/C++, Object Oriented analysis/methodologies. Fast learner with creative problem solving skills, good coding and communication skills.
+        </p>
       </div>
 
     </div>
@@ -58,5 +58,15 @@
     <a class="footer-link" href="https://www.facebook.com/meet.1636">Facebook</a>
     <p class="copyright">© 2019 Meet Bhalodia.</p>
   </div>
-  </body>
+
+  <script>
+    var parallax = document.getElementById("parallax");
+
+    window.addEventListener("scroll", function() {
+      var offset = window.pageYOffset;
+      parallax.style.backgroundPositionY = offset * 0.7 + "px";
+    });
+  </script>
+</body>
+
 </html>
