@@ -1,8 +1,13 @@
 header{
-  height:100vh;
+  /* height:100vh;
   width:100%;
   background-image: url('cloudbg.png');
-  background-size: cover;
+  background-size: cover; */
+  background: url('cloudbg.png') no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
 }
 
 body{
